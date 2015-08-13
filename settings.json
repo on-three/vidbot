@@ -1,0 +1,11 @@
+{
+  "server" : "irc.rizon.io",
+  "port" : 6660,
+  "channel" : "#bariety",
+  "nick" : "vidbot",
+  "realname" : "vidbot",
+
+  "whitelist" : ["on3", "anothernick"],
+  "modlist" : ["on_three", "yetanothernick"]
+
+}
