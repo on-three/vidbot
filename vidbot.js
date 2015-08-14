@@ -1,8 +1,10 @@
 var irc = require('irc');
 var config = require('./settings.json');
+var whitelist = require('./lib/whitelist');
 
 //plugins
 var plugins = [
+  require('./lib/whitelist.js'),
   require('./lib/youtube.js')
   ]
 
@@ -24,6 +26,10 @@ var Channel = function(name, client) {
 }
 
 function handleMessage(channel, from, msg) {
+  if(!whitelist.isWhitelisted(from)) {
+    console.log(from + "not whitelisted.");
+    return message;
+  }
   var message = msg;
   var arrayLength = plugins.length;
   for (var i = 0; i < arrayLength; i++) {
