@@ -13,6 +13,9 @@ var plugins = [
 //   console.error("USAGE: vidbot <input video file or url>");
 // }
 
+var PRIMARY_REGEX = /^\.\./i;
+var STATUS_REGEX = /^\.\.status$/i;
+
 
 var Channel = function(name, client) {
   this.client = client;
@@ -26,10 +29,22 @@ var Channel = function(name, client) {
 }
 
 function handleMessage(channel, from, msg) {
+  // for performance, just check if this is message is
+  // remotely of interest
+  if(!msg.match(PRIMARY_REGEX)) {
+    return msg;
+  }
+
   if(!whitelist.isWhitelisted(from)) {
     console.log(from + "not whitelisted.");
     return message;
   }
+
+  if(msg.match(STATUS_REGEX)) {
+    status(channel, from, msg);
+    return null;
+  }
+
   var message = msg;
   var arrayLength = plugins.length;
   for (var i = 0; i < arrayLength; i++) {
@@ -76,6 +91,15 @@ bot.addListener('message'+config.channel, function (from, message) {
     console.log(from + ' => '+ config.channel+' ' + message);
     handleMessage(channel, from, message);
 });
+
+function status(channel, from , msg) {
+  var statusString = '[STATUS]'.irc.green.bold();
+  for(i=0;i<plugins.length;++i) {
+    plugin = plugins[i];
+    statusString += (' ' + plugin.status());
+  }
+  channel.say(statusString);
+}
 
 
 
