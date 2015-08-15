@@ -25,8 +25,11 @@ Show bot plugin status (which plugins are turned on etc.)
 ##.whitelist
 Turn bot whitelist to one of three levels: ON, OFF and MODS. Edit the settings.json file to add members to these lists. When turned on, the bot wil ignore any nick not in the given list.
 Only members of the MODS whitelist can ever change the whitelist level.
+
 ```.whitelist on```
+
 ```.whitelist off```
+
 ```.whitelist mods```
 
 ##.y (mpv+youtube-dl)
