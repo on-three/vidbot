@@ -1,0 +1,32 @@
+{
+  "name": "vidbot",
+  "version": "0.0.1",
+  "description": "IRC Bot to drive media players for streaming",
+  "main": "vidbot.js",
+  "dependencies": {
+    "irc": "^0.3.12",
+    "irc-colors": "^1.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/on-three/vidbot.git"
+  },
+  "keywords": [
+    "IRC",
+    "Video",
+    "MPV",
+    "Youtube-dl",
+    "livestreamer",
+    "node.js"
+  ],
+  "author": "on-three",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/on-three/vidbot/issues"
+  },
+  "homepage": "https://github.com/on-three/vidbot#readme"
+}
