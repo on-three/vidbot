@@ -13,9 +13,8 @@ var plugins = [
 //   console.error("USAGE: vidbot <input video file or url>");
 // }
 
-var PRIMARY_REGEX = /^\.\./i;
-var STATUS_REGEX = /^\.\.status$/i;
-
+var PRIMARY_REGEX = RegExp(config.delimiter, "i");
+var STATUS_REGEX = RegExp(config.delimiter+"status$", "i");
 
 var Channel = function(name, client) {
   this.client = client;
@@ -100,6 +99,3 @@ function status(channel, from , msg) {
   }
   channel.say(statusString);
 }
-
-
-

@@ -6,6 +6,8 @@
   "realname" : "vidbot",
 
   "whitelist" : ["on3", "anothernick"],
-  "modlist" : ["on_three", "yetanothernick"]
+  "modlist" : ["on_three", "yetanothernick"],
+
+  "delimiter" : "^\\."
 
 }
