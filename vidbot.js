@@ -5,7 +5,8 @@ var whitelist = require('./lib/whitelist');
 //plugins
 var plugins = [
   require('./lib/whitelist.js'),
-  require('./lib/youtube.js')
+  require('./lib/youtube.js'),
+  require('./lib/wm.js')
   ]
 
 // Command line arguments
@@ -34,8 +35,8 @@ function handleMessage(channel, from, msg) {
     return msg;
   }
 
-  if(!whitelist.isWhitelisted(from)) {
-    console.log(from + "not whitelisted.");
+  if(whitelist.isBlacklisted(from)) {
+    console.log(from + " BLACKLISTED.");
     return message;
   }
 
@@ -49,7 +50,7 @@ function handleMessage(channel, from, msg) {
   for (var i = 0; i < arrayLength; i++) {
     message = plugins[i].handleMessage(channel, from, msg);
     if(!message) {
-      return message;
+      break;
     }
   }
   return message;
