@@ -42,10 +42,11 @@ Simple mpv controls are exposed for sub commands:
 * ```.y t|time``` Returns the remaining time (in minutes) for the current playing file.
 * ```.y next|wipe|quit``` End the current video and go to the next if there is another in the playlist.
 * ```.y wipe all``` Kill the player, dropping all current playlist entries.
-* ```.y mute on``` Mute the player.
-* ```.y mute off``` Unmute the player.
+* ```.y pause|pause on``` Pause the player.
+* ```.y unpause|pause off``` Unpause the player.
+* ```.y mute|mute on``` Mute the player.
+* ```.y unmute|mute off``` Unmute the player.
 * ```.y subs on``` Turn subtitles on.
 * ```.y subs off``` Turn subtitles off.
 * ```.y subs <number>``` Use subtitle track <number>.
 * ```.y audio <number>``` Use audio track <number>
-* 
