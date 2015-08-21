@@ -9,6 +9,18 @@
   "modlist" : ["on_three", "yetanothernick"],
   "blacklist" : ["swim"],
 
+  "youtube" : {
+    "instance" : "YOUTUBE",
+    "display" : ":1.0"
+  },
+
+  "wm" : {
+    "port": 5080,
+    "host": "127.0.0.1",
+    "path": "/",
+    "strict": false
+  },
+
   "delimiter" : "^\\."
 
 }
