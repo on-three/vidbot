@@ -2,7 +2,10 @@
 IRC bot to drive media players for streaming
 
 # Installation
-TBD
+I've provided a package.json which should be updated with the latest node.js dependencies. To install these locally, run the following from the git repository root:
+```
+npm install
+```
 
 #Setup
 Edit the settings.json file to point the bot to the proper irc server, port and channel.
