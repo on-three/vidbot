@@ -9,6 +9,9 @@
   "modlist" : ["on_three", "yetanothernick"],
   "blacklist" : ["swim"],
 
+
+  "delimiter" : "^\\.",
+
   "youtube" : {
     "instance" : "YOUTUBE",
     "display" : ":1.0"
@@ -21,6 +24,9 @@
     "strict": false
   },
 
-  "delimiter" : "^\\."
-
+  "jstream" : {
+    "instance" : "JSTREAM",
+    "display" : ":1.0",
+    "url" : "http://weeabot.com:9526/bane.ts"
+  }
 }

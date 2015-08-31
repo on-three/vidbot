@@ -6,6 +6,7 @@ var whitelist = require('./lib/whitelist');
 var plugins = [
   require('./lib/whitelist.js'),
   require('./lib/youtube.js'),
+  require('./lib/jstream.js'),
   require('./lib/wm.js')
   ]
 
