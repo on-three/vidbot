@@ -1,12 +1,17 @@
 var irc = require('irc');
 var config = require('./settings.json');
 var whitelist = require('./lib/whitelist');
+var YoutubePlayer = require('./lib/youtube.js');
+
+var yt1 = new YoutubePlayer(config.youtube);
+var yt2 = new YoutubePlayer(config.youtube2);
 
 //plugins
 var plugins = [
   require('./lib/whitelist.js'),
-  require('./lib/youtube.js'),
   require('./lib/jstream.js'),
+  yt1,
+  yt2,
   require('./lib/wm.js')
   ]
 

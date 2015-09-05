@@ -1,19 +1,26 @@
 {
   "server" : "irc.rizon.io",
   "port" : 6660,
-  "channel" : "#bariety",
+  "channel" : "#/jp/shows",
   "nick" : "vidbot",
   "realname" : "vidbot",
 
-  "whitelist" : ["on3", "anothernick"],
-  "modlist" : ["on_three", "yetanothernick"],
+  "whitelist" : ["on3", "anothernick", "rootB"],
+  "modlist" : ["on_three", "pinetreegator", "bp", "Gerardos", "swam"],
   "blacklist" : ["swim"],
 
 
   "delimiter" : "^\\.",
 
   "youtube" : {
+    "prefix" : "y",
     "instance" : "YOUTUBE",
+    "display" : ":1.0"
+  },
+
+  "youtube2" : {
+    "prefix" : "y2",
+    "instance" : "YOUTUBE2",
     "display" : ":1.0"
   },
 
@@ -27,6 +34,6 @@
   "jstream" : {
     "instance" : "JSTREAM",
     "display" : ":1.0",
-    "url" : "http://weeabot.com:9526/bane.ts"
+    "url" : "http://192.168.1.135:8090/source"
   }
 }
