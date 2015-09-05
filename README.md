@@ -53,3 +53,4 @@ Simple mpv controls are exposed for sub commands:
 * ```.y subs off``` Turn subtitles off.
 * ```.y subs <number>``` Use subtitle track <number>.
 * ```.y audio <number>``` Use audio track <number>
+* ```.y seek <(+-)seconds>``` Seek forward or back in the file X seconds. Negative numbers indicate backwards seek. <number>
