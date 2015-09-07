@@ -59,7 +59,7 @@
 
   "webms" : {
     "prefix" : "webms",
-    "instance" : "JSTREAM",
+    "instance" : "WEBMS",
     "screens" : [
       {
           "instance" : "WEBM1",

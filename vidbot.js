@@ -5,7 +5,7 @@ var YoutubePlayer = require('./lib/youtube.js');
 var Webms = require('./lib/webms.js');
 
 var yt1 = new YoutubePlayer(config.youtube);
-var yt2 = new YoutubePlayer(config.youtube2);
+//var yt2 = new YoutubePlayer(config.youtube2);
 var webms = new Webms(config.webms);
 
 //plugins
@@ -13,8 +13,8 @@ var plugins = [
   require('./lib/whitelist.js'),
   require('./lib/jstream.js'),
   webms,
-  yt1,
-  yt2,
+  yt1
+  //yt2,
   //require('./lib/wm.js')
   ]
 
