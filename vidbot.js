@@ -2,17 +2,20 @@ var irc = require('irc');
 var config = require('./settings.json');
 var whitelist = require('./lib/whitelist');
 var YoutubePlayer = require('./lib/youtube.js');
+var Webms = require('./lib/webms.js');
 
 var yt1 = new YoutubePlayer(config.youtube);
 var yt2 = new YoutubePlayer(config.youtube2);
+var webms = new Webms(config.webms);
 
 //plugins
 var plugins = [
   require('./lib/whitelist.js'),
   require('./lib/jstream.js'),
+  webms,
   yt1,
   yt2,
-  require('./lib/wm.js')
+  //require('./lib/wm.js')
   ]
 
 // Command line arguments
@@ -37,9 +40,9 @@ var Channel = function(name, client) {
 function handleMessage(channel, from, msg) {
   // for performance, just check if this is message is
   // remotely of interest
-  if(!msg.match(PRIMARY_REGEX)) {
-    return msg;
-  }
+  // if(!msg.match(PRIMARY_REGEX)) {
+  //   return msg;
+  // }
 
   if(whitelist.isBlacklisted(from)) {
     console.log(from + " BLACKLISTED.");

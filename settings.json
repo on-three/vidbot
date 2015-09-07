@@ -12,16 +12,31 @@
 
   "delimiter" : "^\\.",
 
+  "screen" : {
+    "left" : 100,
+    "top" : 100,
+    "width" : 1280,
+    "height" : 720
+  },
+
   "youtube" : {
     "prefix" : "y",
     "instance" : "YOUTUBE",
-    "display" : ":1.0"
+    "mpv" : [
+      "--geometry=100:100" ,
+      "--no-border",
+      "-autofit=1280x720"
+    ]
   },
 
   "youtube2" : {
     "prefix" : "y2",
     "instance" : "YOUTUBE2",
-    "display" : ":1.0"
+    "mpv" : [
+      "--geometry=100:100" ,
+      "--no-border",
+      "-autofit=1280x720"
+    ]
   },
 
   "wm" : {
@@ -34,6 +49,54 @@
   "jstream" : {
     "instance" : "JSTREAM",
     "display" : ":1.0",
+    "mpv" : [
+      "--geometry=100:100" ,
+      "--no-border",
+      "-autofit=1280x720"
+    ],
     "url" : "http://192.168.1.135:8090/source"
+  },
+
+  "webms" : {
+    "prefix" : "webms",
+    "instance" : "JSTREAM",
+    "screens" : [
+      {
+          "instance" : "WEBM1",
+          "mpv" : [
+            "--geometry=100:100" ,
+            "--ontop",
+            "--no-border",
+            "-autofit=625x360"
+          ]
+      },
+      {
+          "instance" : "WEBM2",
+          "mpv" : [
+            "--geometry=725:100" ,
+            "--ontop",
+            "--no-border",
+            "-autofit=625x360"
+          ]
+      },
+      {
+          "instance" : "WEBM3",
+          "mpv" : [
+            "--geometry=100:460" ,
+            "--ontop",
+            "--no-border",
+            "-autofit=625x360"
+          ]
+      },
+      {
+          "instance" : "WEBM4",
+          "mpv" : [
+            "--geometry=725:460" ,
+            "--ontop",
+            "--no-border",
+            "-autofit=625x360"
+          ]
+      }
+    ]
   }
 }
