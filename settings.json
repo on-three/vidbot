@@ -23,9 +23,8 @@
     "prefix" : "y",
     "instance" : "YOUTUBE",
     "mpv" : [
-      "--geometry=100:100" ,
-      "--no-border",
-      "-autofit=1280x720"
+      "--geometry=1280x720+100+100",
+      "--no-border"
     ]
   },
 
@@ -33,7 +32,7 @@
     "prefix" : "y2",
     "instance" : "YOUTUBE2",
     "mpv" : [
-      "--geometry=100:100" ,
+      "--geometry=1280x720+100+100" ,
       "--no-border",
       "-autofit=1280x720"
     ]
@@ -50,9 +49,8 @@
     "instance" : "JSTREAM",
     "display" : ":1.0",
     "mpv" : [
-      "--geometry=100:100" ,
-      "--no-border",
-      "-autofit=1280x720"
+      "--geometry=1280x720+100+100",
+      "--no-border"
     ],
     "url" : "http://192.168.1.135:8090/source"
   },

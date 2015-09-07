@@ -12,9 +12,9 @@ var webms = new Webms(config.webms);
 var plugins = [
   require('./lib/whitelist.js'),
   require('./lib/jstream.js'),
-  webms,
-  yt1
+  yt1,
   //yt2,
+  webms
   //require('./lib/wm.js')
   ]
 
