@@ -2,10 +2,12 @@ var irc = require('irc');
 var config = require('./settings.json');
 var whitelist = require('./lib/whitelist');
 var YoutubePlayer = require('./lib/youtube.js');
+var Torrent = require('./lib/torrent.js');
 var Webms = require('./lib/webms.js');
 
 var yt1 = new YoutubePlayer(config.youtube);
 //var yt2 = new YoutubePlayer(config.youtube2);
+var torrent = new Torrent(config.torrent);
 var webms = new Webms(config.webms);
 
 //plugins
@@ -14,6 +16,7 @@ var plugins = [
   require('./lib/jstream.js'),
   yt1,
   //yt2,
+  torrent,
   webms
   //require('./lib/wm.js')
   ]

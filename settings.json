@@ -24,7 +24,8 @@
     "instance" : "YOUTUBE",
     "mpv" : [
       "--geometry=1280x720+100+100",
-      "--no-border"
+      "--no-border",
+      "--quiet=yes"
     ]
   },
 
@@ -34,7 +35,8 @@
     "mpv" : [
       "--geometry=1280x720+100+100" ,
       "--no-border",
-      "-autofit=1280x720"
+      "-autofit=1280x720",
+      "--quiet=yes"
     ]
   },
 
@@ -47,12 +49,28 @@
 
   "jstream" : {
     "instance" : "JSTREAM",
-    "display" : ":1.0",
     "mpv" : [
       "--geometry=1280x720+100+100",
-      "--no-border"
+      "--no-border",
+      "--quiet=yes"
     ],
     "url" : "http://192.168.1.135:8090/source"
+  },
+
+  "torrent" : {
+    "prefix" : "torrent",
+    "instance" : "TORRENT",
+    "peerflix" : [
+      "--path=/home/on-three/Downloads",
+      "--quiet",
+      "--mpv",
+      "--",
+      "--geometry=1280x720+100+100",
+      "--no-border",
+      "--autofit=1280x720",
+      "--input-unix-socket=/tmp/mpvsocket_TORRENT",
+      "--mute=no"
+    ]
   },
 
   "webms" : {
@@ -65,7 +83,8 @@
             "--geometry=100:100" ,
             "--ontop",
             "--no-border",
-            "-autofit=625x360"
+            "-autofit=625x360",
+            "--quiet=yes"
           ]
       },
       {
@@ -74,7 +93,8 @@
             "--geometry=725:100" ,
             "--ontop",
             "--no-border",
-            "-autofit=625x360"
+            "-autofit=625x360",
+            "--quiet=yes"
           ]
       },
       {
@@ -83,7 +103,8 @@
             "--geometry=100:460" ,
             "--ontop",
             "--no-border",
-            "-autofit=625x360"
+            "-autofit=625x360",
+            "--quiet=yes"
           ]
       },
       {
@@ -92,7 +113,8 @@
             "--geometry=725:460" ,
             "--ontop",
             "--no-border",
-            "-autofit=625x360"
+            "-autofit=625x360",
+            "--quiet=yes"
           ]
       }
     ]
