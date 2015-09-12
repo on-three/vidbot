@@ -17,7 +17,8 @@ var plugins = [
   yt1,
   //yt2,
   torrent,
-  webms
+  webms,
+  require('./lib/screenshot.js')
   //require('./lib/wm.js')
   ]
 

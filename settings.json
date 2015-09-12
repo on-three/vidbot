@@ -19,6 +19,10 @@
     "height" : 720
   },
 
+  "stream" : {
+    "url" : "http://xxx.com:xxx/xxx.ts"
+  },
+
   "youtube" : {
     "prefix" : "y",
     "instance" : "YOUTUBE",
@@ -26,7 +30,12 @@
       "--geometry=1280x720+100+100",
       "--no-border",
       "--quiet=yes"
-    ]
+    ],
+    "scrape" : {
+      "url" : "http://www.xxx.com/youtubes/api/",
+      "user" : "xxx",
+      "password" : "xxx"
+    }
   },
 
   "youtube2" : {
@@ -120,7 +129,17 @@
     ],
     "scrape" : {
       "url" : "http://www.xxx.com/webms/new/",
-      "user" : "xxxt",
+      "user" : "xxx",
+      "password" : "xxx"
+    }
+  },
+  "screenshot" : {
+    "prefix" : "screenshot",
+    "instance" : "SCREENSHOT",
+    "cooloff_ms" : 12000,
+    "scrape" : {
+      "url" : "http://www.xxx.com/screenshot/new/",
+      "user" : "xxx",
       "password" : "xxx"
     }
   }
