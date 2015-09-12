@@ -4,11 +4,14 @@ var whitelist = require('./lib/whitelist');
 var YoutubePlayer = require('./lib/youtube.js');
 var Torrent = require('./lib/torrent.js');
 var Webms = require('./lib/webms.js');
+var Livestream = require('./lib/livestream.js');
 
 var yt1 = new YoutubePlayer(config.youtube);
 var ypip = new YoutubePlayer(config.ypip);
 var torrent = new Torrent(config.torrent);
 var webms = new Webms(config.webms);
+var s = new Livestream(config.livestream);
+var spip = new Livestream(config.livestreampip);
 
 //plugins
 var plugins = [
@@ -17,6 +20,8 @@ var plugins = [
   yt1,
   ypip,
   torrent,
+  s,
+  spip,
   webms,
   require('./lib/screenshot.js')
   //require('./lib/wm.js')

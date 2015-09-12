@@ -88,6 +88,22 @@
     ]
   },
 
+  "livestream" : {
+    "prefix" : "s",
+    "instance" : "LIVESTREAMER",
+    "mpv" : [
+      "-p mpv --input-unix-socket=/tmp/mpvsocket_LIVESTREAMER --geometry=1280x720+100+100 --no-border --quiet=yes"
+    ]
+  },
+
+  "livestreampip" : {
+    "prefix" : "spip",
+    "instance" : "SPIP",
+    "mpv" : [
+      "-p mpv --input-unix-socket=/tmp/mpvsocket_LIVESTREAMER_PIP --geometry=512x288+858+520 --ontop --no-border --quiet=yes"
+    ]
+  },
+
   "webms" : {
     "prefix" : "webms",
     "instance" : "WEBMS",
