@@ -38,15 +38,21 @@
     }
   },
 
-  "youtube2" : {
-    "prefix" : "y2",
-    "instance" : "YOUTUBE2",
+  "ypip" : {
+    "prefix" : "ypip",
+    "instance" : "YPIP",
     "mpv" : [
-      "--geometry=1280x720+100+100" ,
+      "--geometry=512x288+110+520" ,
       "--no-border",
-      "-autofit=1280x720",
+      "--ontop",
+      "-autofit=512x288",
       "--quiet=yes"
-    ]
+    ],
+    "scrape" : {
+      "url" : "http://www.xxx.com/youtubes/api/",
+      "user" : "xxx",
+      "password" : "xxx"
+    }
   },
 
   "wm" : {

@@ -6,7 +6,7 @@ var Torrent = require('./lib/torrent.js');
 var Webms = require('./lib/webms.js');
 
 var yt1 = new YoutubePlayer(config.youtube);
-//var yt2 = new YoutubePlayer(config.youtube2);
+var ypip = new YoutubePlayer(config.ypip);
 var torrent = new Torrent(config.torrent);
 var webms = new Webms(config.webms);
 
@@ -15,7 +15,7 @@ var plugins = [
   require('./lib/whitelist.js'),
   require('./lib/jstream.js'),
   yt1,
-  //yt2,
+  ypip,
   torrent,
   webms,
   require('./lib/screenshot.js')
