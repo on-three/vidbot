@@ -9,6 +9,18 @@ if(process.argv.length != 3) {
 var torrentFilename = process.argv[2];
 console.log("Fetching torrent: ", torrentFilename);
 
+var Channel = function(name, client) {
+  this.client = client;
+  this.name = name;
+  this.say = function(something) {
+    console.log(something);
+  }
+  this.log = function(something) {
+    console.log(something);
+  }
+}
+var channel = new Channel('TORRENTTEST', null)
+
 var settings = {
     options : {
     connections: 100,     // Max amount of peers to be connected to.
@@ -77,18 +89,19 @@ var fileLister = function() {
 }
 
 var onTorrentPlay = function() {
-  consoel.log("onTorrentPlay");
+  console.log("onTorrentPlay");
 }
 
 var onTorrentLoaded = function() {
-  consoel.log("onTorrentLoaded");
+  console.log("onTorrentLoaded");
 }
 
 var onTorrentEnd = function() {
-  consoel.log("onTorrentEnd");
+  console.log("onTorrentEnd");
 }
 
 var client = torrent(settings,
+                      channel,
                         torrentFilename,
                         new largestFileSelector(),
                         //new fileLister(),
