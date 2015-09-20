@@ -6,7 +6,7 @@
   "realname" : "vidbot",
 
   "whitelist" : ["on3", "anothernick", "rootB"],
-  "modlist" : ["on_three", "pinetreegator", "bp", "Gerardos", "swam"],
+  "modlist" : ["on_three", "bp", "pinetreegator", "Gerardos", "swam"],
   "blacklist" : ["swim"],
 
 
@@ -158,7 +158,7 @@
   "screenshot" : {
     "prefix" : "screenshot",
     "instance" : "SCREENSHOT",
-    "cooloff_ms" : 12000,
+    "cooloff_ms" : 120000,
     "scrape" : {
       "url" : "http://www.xxx.com/screenshot/new/",
       "user" : "xxx",
