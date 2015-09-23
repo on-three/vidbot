@@ -1,7 +1,7 @@
 {
   "server" : "irc.rizon.io",
   "port" : 6660,
-  "channel" : "#/jp/shows",
+  "channel" : "#bariety",
   "nick" : "vidbot",
   "realname" : "vidbot",
 
@@ -75,11 +75,8 @@
   "torrent" : {
     "prefix" : "torrent",
     "instance" : "TORRENT",
-    "peerflix" : [
-      "--path=/home/on-three/Downloads",
-      "--quiet",
-      "--mpv",
-      "--",
+    "options" : {},
+    "mpv" : [
       "--geometry=1280x720+100+100",
       "--no-border",
       "--autofit=1280x720",
