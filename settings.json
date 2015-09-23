@@ -75,7 +75,11 @@
   "torrent" : {
     "prefix" : "torrent",
     "instance" : "TORRENT",
-    "options" : {},
+    "options" : {
+      "connections": 100,
+      "uploads" : 0,
+      "tmp": "/tmp"
+    },
     "mpv" : [
       "--geometry=1280x720+100+100",
       "--no-border",
