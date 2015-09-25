@@ -1,0 +1,26 @@
+{
+  "random" : {
+    "akagi": {
+        "enabled" : true,
+        "frequency" : 10,
+        "subgroups" : []
+      },
+      "saki": {
+        "enabled" : true,
+        "frequency" : 10,
+        "subgroups" : []
+      },
+      "dbz": {
+        "enabled" : true,
+        "frequency" : 20,
+        "subgroups" : ["season 1", "season 2", "season 3"],
+        "initialSubgroup" : "season 1",
+        "initialEpisodeIndex" : 1
+      }
+  },
+  "scheduled" : {
+    "akagi" : ["daily@8:00pmPST"],
+    "saki" : ["daily@8:30pmPST"],
+    "dbz":["sat@9:00pmPST"]
+  }
+}
