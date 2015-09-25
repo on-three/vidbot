@@ -20,5 +20,22 @@
          "http://www.crunchyroll.com/saki/episode-4-beat-down-524852"
        ]
      }
-   }
+   },
+   "dbz" : {
+      "season 1" : {
+        "regexes" : [
+          "/home/on-three/stor/DBZ/Dragon Ball Z/DBZ Season 1  ( Vegeta saga ) - mgb87/*.mkv"
+        ]
+      },
+      "season 2" : {
+        "regexes" : [
+          "/home/on-three/stor/DBZ/Dragon Ball Z/DBZ Season 2 ( Namek and Captain Ginyu Sagas ) - mgb87/*.mkv"
+        ]
+      },
+      "season 3" : {
+        "regexes" : [
+          "/home/on-three/stor/DBZ/Dragon Ball Z/DBZ Season 3 (Frieza Saga) - mgb87/*.mkv"
+        ]
+      }
+    }
 }
