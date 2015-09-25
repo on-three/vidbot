@@ -73,21 +73,20 @@
   },
 
   "torrent" : {
-    "prefix" : "torrent",
-    "instance" : "TORRENT",
-    "options" : {
-      "connections": 100,
-      "uploads" : 0,
-      "tmp": "/tmp"
+      "prefix" : "torrent",
+      "instance" : "TORRENT",
+      "peerflix" : [
+        "--path=/home/on-three/Downloads",
+        "--quiet",
+        "--mpv",
+        "--",
+        "--geometry=1280x720+100+100",
+        "--no-border",
+        "--autofit=1280x720",
+        "--input-unix-socket=/tmp/mpvsocket_TORRENT",
+        "--mute=no"
+      ]
     },
-    "mpv" : [
-      "--geometry=1280x720+100+100",
-      "--no-border",
-      "--autofit=1280x720",
-      "--input-unix-socket=/tmp/mpvsocket_TORRENT",
-      "--mute=no"
-    ]
-  },
 
   "livestream" : {
     "prefix" : "s",
@@ -165,5 +164,14 @@
       "user" : "xxx",
       "password" : "xxx"
     }
+  },
+  "shows" : {
+    "prefix" : "shows",
+    "instance" : "SHOWS",
+    "mpv" : [
+      "--geometry=1280x720+100+100",
+      "--no-border",
+      "--quiet=yes"
+    ]
   }
 }

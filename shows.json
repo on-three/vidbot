@@ -3,13 +3,14 @@
     "season 1" : {
       "regexes" : [],
       "episodes" : [
-        "http://www.crunchyroll.com/akagi/episode-1-the-genius-who-descended-into-the-darkness-643799"
-        "http://www.crunchyroll.com/akagi/episode-2-the-awakening-of-talent-643801"
-        "http://www.crunchyroll.com/akagi/episode-3-the-sinister-scheme-643803"
+        "http://www.crunchyroll.com/akagi/episode-1-the-genius-who-descended-into-the-darkness-643799",
+        "http://www.crunchyroll.com/akagi/episode-2-the-awakening-of-talent-643801",
+        "http://www.crunchyroll.com/akagi/episode-3-the-sinister-scheme-643803",
         "http://www.crunchyroll.com/akagi/episode-4-a-true-outlaw-643805"
       ]
-    },
-   "saki" : {
+    }
+  },
+  "saki" : {
      "season 1" : {
        "regexes" : [],
        "episodes" : [
@@ -20,4 +21,4 @@
        ]
      }
    }
-  }
+}

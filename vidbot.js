@@ -6,6 +6,7 @@ var Torrent = require('./lib/torrent.js');
 var Webms = require('./lib/webms.js');
 var Livestream = require('./lib/livestream.js');
 var JStream = require('./lib/jstream.js');
+var Shows = require('./lib/shows.js');
 
 var yt1 = new YoutubePlayer(config.youtube);
 var ypip = new YoutubePlayer(config.ypip);
@@ -14,6 +15,7 @@ var webms = new Webms(config.webms);
 var s = new Livestream(config.livestream);
 var spip = new Livestream(config.livestreampip);
 var jstream = new JStream(config.jstream);
+var shows = new Shows(config.shows);
 
 //plugins
 var plugins = [
@@ -25,6 +27,7 @@ var plugins = [
   s,
   spip,
   webms,
+  shows,
   require('./lib/screenshot.js')
   //require('./lib/wm.js')
   ]
