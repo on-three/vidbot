@@ -21,6 +21,6 @@
   "scheduled" : {
     "akagi" : ["daily@8:00pmPST"],
     "saki" : ["daily@8:30pmPST"],
-    "dbz":["sat@9:00pmPST"]
+    "dbz": ["sat@9:00pmPST"]
   }
 }
