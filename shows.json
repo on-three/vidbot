@@ -1,7 +1,6 @@
 {
   "akagi" : {
     "season 1" : {
-      "regexes" : [],
       "episodes" : [
         "http://www.crunchyroll.com/akagi/episode-1-the-genius-who-descended-into-the-darkness-643799",
         "http://www.crunchyroll.com/akagi/episode-2-the-awakening-of-talent-643801",
@@ -12,7 +11,6 @@
   },
   "saki" : {
      "season 1" : {
-       "regexes" : [],
        "episodes" : [
          "http://www.crunchyroll.com/saki/episode-1-encounter-524846",
          "http://www.crunchyroll.com/saki/episode-2-battle-524848",
@@ -37,5 +35,40 @@
           "/home/on-three/stor/DBZ/Dragon Ball Z/DBZ Season 3 (Frieza Saga) - mgb87/*.mkv"
         ]
       }
-    }
+    },
+    "strike witches" : {
+       "season 1" : {
+         "episodes" : [
+           "https://www.youtube.com/watch?v=n_uqGedYkLg",
+           "https://www.youtube.com/watch?v=IzswNVFmknwE",
+           "https://www.youtube.com/watch?v=7T85LG1UG9k",
+           "https://www.youtube.com/watch?v=7oZCJRsW1Ms",
+           "https://www.youtube.com/watch?v=7oZCJRsW1Ms",
+           "https://www.youtube.com/watch?v=FavjtnvH5UA",
+           "https://www.youtube.com/watch?v=QWteaORahvo",
+           "https://www.youtube.com/watch?v=YrI2dLd9ijU",
+           "https://www.youtube.com/watch?v=P4UigcD8ejQ",
+           "https://www.youtube.com/watch?v=_DWIYdmTRPs",
+           "https://www.youtube.com/watch?v=0uTPMbK2jao",
+           "https://www.youtube.com/watch?v=XSkQYFb8aeU",
+           "https://www.youtube.com/watch?v=0x_OHbSr7D8"
+         ]
+       },
+       "season 2" : {
+         "episodes" : [
+          "https://www.youtube.com/watch?v=zdLr1iK8ZdM",
+           "https://www.youtube.com/watch?v=H9iTA3DsOII",
+           "https://www.youtube.com/watch?v=gsnaO6bhfN4",
+           "https://www.youtube.com/watch?v=kPIBDmwRbGY",
+           "https://www.youtube.com/watch?v=atdoVy6lCWs",
+           "https://www.youtube.com/watch?v=8cWHHvAO4Fg",
+           "https://www.youtube.com/watch?v=CUtDeDfAJUU",
+           "https://www.youtube.com/watch?v=-5H_Gktkglk",
+           "https://www.youtube.com/watch?v=ANS4ZJZmEH0",
+           "https://www.youtube.com/watch?v=mCpWzjiqPsk",
+           "https://www.youtube.com/watch?v=U0-q_Njqgec",
+           "https://www.youtube.com/watch?v=BlW_X2__gKA"
+         ]
+       }
+     }
 }
